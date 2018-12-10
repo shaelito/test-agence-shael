@@ -1,8 +1,6 @@
-
-exports.index=function(req,res){
-    res.send('kkkkk')
-}
-
-exports.list=function(req,res){
-    res.send('kkkkk')
+exports.con = {
+    index: function(req, res) {
+        //res.send('kkkkk')
+        res.send(test.render('index', {}));
+    }
 }
