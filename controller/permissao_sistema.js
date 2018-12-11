@@ -1,4 +1,4 @@
-exports.con = {
+exports.ctrl = {
     index: function (req, res) {
         test.model.PermissaoSistema.findAll()
             .then(function (permissao_sistemas) {

@@ -1,4 +1,4 @@
-exports.con = {
+exports.ctrl = {
     index: function (req, res) {
         test.model.CaoUsuario.findAll()
             .then(function (cao_usuarios) {

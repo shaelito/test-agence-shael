@@ -1,5 +1,6 @@
-var con = {
+var ctrl = {
     get_dato_fatura_desempenho: function (req, res) {
+        var self = this;
         var moment = require('moment');
         var sql_query = "SELECT cu.co_usuario, MONTH(cf.data_emissao) as month, YEAR(cf.data_emissao) as year, " +
             "cu.no_usuario, sum(cf.valor - (cf.valor*cf.total_imp_inc/100)) as receita_liquida, " +
@@ -26,8 +27,8 @@ var con = {
                 console.log(data_desempenho);
                 test.model.CaoSalario.findAll()
                     .then(function (data_salario) {
-                        var format_relatorio_data = con.format_relatorio_data(data_desempenho, data_salario);
-                        var format_grafico_data = con.format_grafico_data(req.body.periods, data_desempenho, format_relatorio_data.datos);
+                        var format_relatorio_data = ctrl.format_relatorio_data(data_desempenho, data_salario);
+                        var format_grafico_data = ctrl.format_grafico_data(req.body.periods, data_desempenho, format_relatorio_data.datos);
                         res.status(200).json({
                             relatorio: format_relatorio_data,
                             grafico: format_grafico_data
@@ -129,4 +130,4 @@ var con = {
         return dataset;
     }
 };
-exports.con = con;
+exports.ctrl = ctrl;

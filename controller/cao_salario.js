@@ -1,4 +1,4 @@
-exports.con = {
+exports.ctrl = {
     // Get receita líquida
     index: function (req, res) {
         test.model.CaoSalario.findAll()
