@@ -7,10 +7,10 @@ Sequelize = require('sequelize');
 //}
 
 var conn_db = {
-    db_name: "caol",
-    user: "root",
-    password: "root",
-    host: "localhost",
+    db_name: "ladatwoo_cao",
+    user: "ladatwoo_shael",
+    password: "shaelcao",
+    host: "67.20.76.109",
 }
 
 var sequelize = new Sequelize(conn_db.db_name, conn_db.user, conn_db.password, {
