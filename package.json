@@ -7,11 +7,11 @@
     "@angular/core": "^7.1.2",
     "@angular/material": "^7.1.1",
     "body-parser": "^1.18.2",
-    "express": "~4.15.5",
+    "express": "^4.16.4",
     "method-override": "^2.3.10",
-    "moment": "^2.19.2",
+    "moment": "^2.22.2",
     "mysql2": "^1.4.2",
-    "sequelize": "^4.22.5",
+    "sequelize": "^4.41.2",
     "serve-favicon": "~2.4.5",
     "swig": "^1.4.2"
   }
