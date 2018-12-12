@@ -40,10 +40,5 @@ require('./config/routes')(app);
     });
 
 // Create a Server
-var server = app.listen(80, function () {
- 
-    let host = server.address().address
-    let port = server.address().port
-  
-    console.log("App listening at http://%s:%s", host, port);
-  })
+app.listen(8080);
+console.log("App listening on port 8080");
